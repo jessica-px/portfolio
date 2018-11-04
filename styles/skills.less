@@ -72,3 +72,30 @@
   margin-bottom: @size-huge*2;
   line-height: @size-l;
 }
+
+
+@media only screen and (max-width: 650px) {
+  .skill-badge {
+    font-size: @size-s;
+    width: 70%;
+    margin: auto;
+    margin-bottom: @size-xl;
+  }
+  .skill-badge-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: @size-xxl 0 @size-s 0;
+  }
+
+  .skills-other{
+    border-top: 0px solid @color-grey-light;
+    padding-top: 0px;
+    text-align: left;
+    text-align-last: left;
+  }
+
+  .skills-body{
+    text-align: left;
+    margin-bottom: @size-huge;
+  }
+}
