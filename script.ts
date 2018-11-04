@@ -1,5 +1,10 @@
-const onLoad = () => {
-  getProjectData();
+interface Project{
+  name: string,
+  image: string
+  content: string[],
+  siteLink: string,
+  codeLink: string,
+  skills: string[]
 }
 
 const getProjectData = () => {
@@ -10,15 +15,6 @@ const getProjectData = () => {
   }).catch(err => {
     console.error(err);
   });
-}
-
-interface Project{
-  name: string,
-  image: string
-  content: string[],
-  siteLink: string,
-  codeLink: string,
-  skills: string[]
 }
 
 const buildProjectCards = (projectData: Project[]) => {
@@ -65,23 +61,30 @@ const getTitle = (div: HTMLDivElement, project: Project) => {
 }
 
 const getButtons = (div: HTMLDivElement, project: Project) => {
-  // View Button
+  const buttonWrapper = document.createElement("div");
+  buttonWrapper.className = 'card-button-wrapper';
+  const viewButton = getViewButton(project);
+  buttonWrapper.appendChild(viewButton);
+  const codeButton = getCodeButton(project);
+  buttonWrapper.appendChild(codeButton);
+  div.appendChild(buttonWrapper);
+}
+
+const getViewButton = (project: Project):HTMLAnchorElement => {
   const viewButton = document.createElement("a");
   viewButton.className = 'card-button visit';
   viewButton.href = project.siteLink;
   viewButton.innerHTML = 'Visit Site <i class="fas fa-external-link-alt"></i>';
-  // Code Button
+  return viewButton;
+ }
+
+const getCodeButton = (project: Project):HTMLAnchorElement => {
   const codeButton = document.createElement("a");
   codeButton.className = 'code';
   codeButton.href = project.codeLink;
   codeButton.innerHTML = 'View Code <i class="far fa-code"></i>';
-  // Wrapper
-  const buttonWrapper = document.createElement("div");
-  buttonWrapper.className = 'card-button-wrapper';
-  buttonWrapper.appendChild(viewButton);
-  buttonWrapper.appendChild(codeButton);
-  div.appendChild(buttonWrapper);
-}
+  return codeButton;
+ }
 
 const getBodyContent = (div: HTMLDivElement, project: Project) => {
   div.innerHTML += project.content.join('');
@@ -99,5 +102,8 @@ const getSkillChips = (div: HTMLDivElement, project: Project) => {
   div.appendChild(chipWrapper);
 }
 
+const onLoad = () => {
+  getProjectData();
+}
 onLoad();
 
