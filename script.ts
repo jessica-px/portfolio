@@ -74,7 +74,7 @@ const getViewButton = (project: Project):HTMLAnchorElement => {
   const viewButton = document.createElement("a");
   viewButton.className = 'card-button visit';
   viewButton.href = project.siteLink;
-  viewButton.innerHTML = 'Visit Site <i class="fas fa-external-link-alt"></i>';
+  viewButton.innerHTML = '<span class="buttonText">Visit Site</span> <i class="fas fa-external-link-alt"></i>';
   return viewButton;
  }
 
@@ -82,7 +82,7 @@ const getCodeButton = (project: Project):HTMLAnchorElement => {
   const codeButton = document.createElement("a");
   codeButton.className = 'code';
   codeButton.href = project.codeLink;
-  codeButton.innerHTML = 'View Code <i class="far fa-code"></i>';
+  codeButton.innerHTML = '<span class="buttonText">View Code </span><i class="far fa-code"></i>';
   return codeButton;
  }
 
