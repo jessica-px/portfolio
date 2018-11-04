@@ -27,7 +27,7 @@ html, body{
   font-size: 16px;
   margin: 0;
   padding: 0;
-  // margin-bottom: @size-huge;
+  overflow: auto;
 }
 
 p a{
@@ -46,4 +46,10 @@ p a:hover{
   text-align: center;
   margin: @size-huge;
   margin-top: @size-huge*2;
+}
+
+@media only screen and (max-width: 650px) {
+  .divider {
+    font-size: 1.2rem;
+  }
 }
