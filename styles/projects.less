@@ -1,0 +1,103 @@
+// main: styles.less
+
+.projects-container{
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.project-card{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: @size-huge;
+  background: @color-white;
+  box-shadow: 
+    0 50px 100px rgba(50,50,93,.05), 
+    0 15px 35px rgba(50,50,93,.1), 
+    0 5px 15px rgba(0,0,0,.1);
+  overflow: hidden;
+}
+
+.card-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 40%; 
+}
+
+.card-content{
+  width: 50%;
+  padding: @size-xxl;
+  padding-left: @size-huge;
+  z-index: 2;
+  background: @color-white;
+  // text-align: justify;
+}
+
+.card-title-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: @size-xxl;
+}
+
+.card-title{
+  font-family: @font-header;
+  font-size: @size-l;
+}
+
+.card-button-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-button-wrapper > a {
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 600;
+  padding: @size-s;
+  margin-left: @size-s;
+  border-radius: 5px;
+}
+
+.visit {
+  border: 1px #00b0e4 solid;
+  letter-spacing: .02rem;
+  color: #00b0e4;
+}
+
+.visit:hover{
+  border: 1px @color-grey solid;
+  color: @color-grey;
+}
+
+.code {
+  border: 1px #00b0e4 solid;
+  background-color: #00b0e4;
+  color: @color-white;
+}
+
+.code:hover{
+  border: 1px @color-grey solid;
+  background-color: @color-grey;
+}
+
+
+
+.chip-wrapper{
+  margin-top: @size-xxl;
+}
+
+.card-chip{
+  color: @color-grey;
+  font-size: @size-s;
+  padding: @size-xs;
+  border: 1px @color-grey-light solid;
+  border-radius: 5px;
+  margin: @size-l @size-xs @size-l 0;
+}
+

@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "Jessica Peck",
+  "license": "MIT",
+  "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.5.0"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.9"
+  }
+}

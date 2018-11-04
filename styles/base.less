@@ -1,0 +1,49 @@
+// main: styles.less
+
+@color-grey-light: rgb(160, 160, 160);
+@color-grey: #4a4848;
+@color-black: #262727;
+@color-black-dark: black;
+@color-white: #fefefe;
+@color-white-off: #f7f7f7;
+@color-bg: #ededed;
+
+// @font-body: Georgia,sans-serif;
+@font-body: 'Work Sans', sans-serif;
+@font-header: 'Arvo', serif;
+
+@size-xs: 0.60rem;
+@size-s: .8rem;
+@size-m: 1.3rem;
+@size-l: 1.6rem;
+@size-xl: 2rem;
+@size-xxl: 2.5rem;
+@size-huge: 4rem;
+
+html, body{
+  background-color: @color-bg;
+  color: @color-black;
+  font-family: @font-body;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  // margin-bottom: @size-huge;
+}
+
+p a{
+  text-decoration: underline;
+  color: @color-black;
+}
+
+p a:hover{
+  color: @color-black-dark;
+}
+
+.divider{
+  font-family: @font-header;
+  font-size: @size-l;
+  color: @color-grey;
+  text-align: center;
+  margin: @size-huge;
+  margin-top: @size-huge*2;
+}
