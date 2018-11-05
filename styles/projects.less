@@ -26,7 +26,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 40%; 
+  max-width: 40%;
 }
 
 .card-content{
@@ -103,7 +103,13 @@
   margin: @size-s @size-xs 0 0;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1150px){
+  .card-image{
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .card-content{
     width: 100%;
     padding: @size-xxl;
@@ -155,4 +161,6 @@
     border: 0px @color-grey-light solid;
     margin: @size-xs/2 0 0 0;
   }
+
+
 }
