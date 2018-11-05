@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-evenly;
   margin: @size-huge 0 @size-xxl 0;
+  // margin-bottom: auto;
 }
 
 .skill-badge{
@@ -48,6 +49,11 @@
    color: #609863;
 }
 
+.icon-mongodb{
+  font-size: 4.35rem;
+  color: #5EAA48;
+}
+
 
 .skills-other{
   flex: 0;
@@ -74,7 +80,7 @@
 }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 900px) {
   .skill-badge {
     font-size: @size-s;
     width: 70%;
@@ -83,7 +89,7 @@
   }
   .skill-badge-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: @size-xxl 0 @size-s 0;
   }
 
@@ -100,5 +106,11 @@
   }
   .fa-js{
     box-shadow:inset 0px 0px 0px .28rem #F4D44F;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .skill-badge-wrapper{
+    grid-template-columns: 1fr 1fr;
   }
 }
