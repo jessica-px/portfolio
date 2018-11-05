@@ -19,91 +19,32 @@ const getProjectData = () => {
 
 const buildProjectCards = (projectData: Project[]) => {
   for (let project of projectData){
-    const newCard = createCard();
-    getImage(newCard, project);
-    getContent(newCard, project);
-    document.getElementById("projects-container").appendChild(newCard);
+    const newCard = createCardContent(project);
+    document.getElementById("projects-container").innerHTML += newCard;
   }
 }
 
-const createCard = (): HTMLDivElement => {
-  const newCard = document.createElement("div");
-  newCard.className = 'project-card'
-  return newCard;
+const createCardContent = (project: Project) => {
+  return `
+    <div class="project-card">
+    <img src="${project.image}" class='card-image'/>
+    <div class='card-content'>
+      <div class="card-title-row">
+          <div class='card-title'>${project.name}</div>
+          <div class="card-button-wrapper">
+              <a href='${project.siteLink}' class='visit'><span class="buttonText">Visit Site</span> <i class="fas fa-external-link-alt"></i></a>
+              <a href='${project.codeLink}' class='code'><span class="buttonText">View Code </span><i class="far fa-code"></i></a>
+          </div>
+      </div>
+      ${project.content.join(' ')}
+      <div class='chip-wrapper'>
+        ${project.skills.map((skill) => `<span class='card-chip'>${skill}</span>`)}
+      </div>
+    </div>
+  </div>
+  `
 }
 
-const getImage = (card: HTMLDivElement, project: Project) => {
-  const newImage = document.createElement("img");
-  newImage.src = project.image;
-  newImage.className = 'card-image';
-  card.appendChild(newImage);
-}
-
-const getContent = (card: HTMLDivElement, project: Project) => {
-  const content = document.createElement("div");
-  content.className = 'card-content';
-  getTitle(content, project);
-  getBodyContent(content, project);
-  getSkillChips(content, project);
-  card.appendChild(content);
-}
-
-const getTitle = (div: HTMLDivElement, project: Project) => {
-  const titleRow = document.createElement("div");
-  titleRow.className = 'card-title-row';
-  const newTitle = document.createElement("div");
-  newTitle.className = 'card-title';
-  newTitle.innerHTML += project.name;
-  titleRow.appendChild(newTitle);
-  getButtons(titleRow, project);
-  div.appendChild(titleRow);
-
-}
-
-const getButtons = (div: HTMLDivElement, project: Project) => {
-  const buttonWrapper = document.createElement("div");
-  buttonWrapper.className = 'card-button-wrapper';
-  const viewButton = getViewButton(project);
-  buttonWrapper.appendChild(viewButton);
-  const codeButton = getCodeButton(project);
-  buttonWrapper.appendChild(codeButton);
-  div.appendChild(buttonWrapper);
-}
-
-const getViewButton = (project: Project):HTMLAnchorElement => {
-  const viewButton = document.createElement("a");
-  viewButton.className = 'card-button visit';
-  viewButton.href = project.siteLink;
-  viewButton.innerHTML = '<span class="buttonText">Visit Site</span> <i class="fas fa-external-link-alt"></i>';
-  return viewButton;
- }
-
-const getCodeButton = (project: Project):HTMLAnchorElement => {
-  const codeButton = document.createElement("a");
-  codeButton.className = 'code';
-  codeButton.href = project.codeLink;
-  codeButton.innerHTML = '<span class="buttonText">View Code </span><i class="far fa-code"></i>';
-  return codeButton;
- }
-
-const getBodyContent = (div: HTMLDivElement, project: Project) => {
-  div.innerHTML += project.content.join('');
-}
-
-const getSkillChips = (div: HTMLDivElement, project: Project) => {
-  const chipWrapper = document.createElement("div");
-  chipWrapper.className = 'chip-wrapper';
-  for (let skill of project.skills){
-    const chip = document.createElement("span");
-    chip.className = 'card-chip';
-    chip.innerHTML = skill;
-    chipWrapper.appendChild(chip);
-  }
-  div.appendChild(chipWrapper);
-}
-
-const onLoad = () => {
-  getProjectData();
-}
+const onLoad = () => { getProjectData(); }
 onLoad();
 
