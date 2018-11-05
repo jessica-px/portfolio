@@ -17,3 +17,22 @@
 .navbar a:hover{
   color: @color-black-dark;
 }
+
+.nav-icon{
+  display: none;
+  padding: @size-xs/2;
+  border-bottom: 1px solid transparent;
+}
+
+@media only screen and (max-width: 600px){
+  .nav-icon{
+    display: inline;
+  }
+  .navbar a:not(.nav-icon) {
+    display: none;
+  }
+  .navbar a:hover{
+    border-bottom: 1px solid @color-black-dark;
+  }
+  
+}
