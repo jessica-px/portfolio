@@ -3,9 +3,9 @@
     "name": "Portfolio Site",
     "image": "./images/portfolio.png",
     "content": [
-      "The website you're on right now! ",
-      "A simple little site for displaying some of my side projects. ",
-      "The HTML for these project cards is generated with JavaScript for easier maintenance. ",
+      "The website you're on right now!",
+      "A simple little site for displaying some of my side projects.",
+      "The HTML for these project cards is generated with JavaScript for easier maintenance.",
       "The data itself is fetched from a JSON file."
     ],
     "siteLink": "http://jessypeck.github.io/piano/index.html",
@@ -18,9 +18,9 @@
     "name": "Piano Says",
     "image": "./images/piano.png",
     "content": [
-      "A Simon-like memory game in the style of a piano. ",
-      "Players can choose which key they want the randomized \"song\" to play in. ",
-      "An optional \"strict\" mode ends the game when the wrong button is pressed. ",
+      "A Simon-like memory game in the style of a piano.",
+      "Players can choose which key they want the randomized \"song\" to play in.",
+      "An optional \"strict\" mode ends the game when the wrong button is pressed.",
       "This project was my first experience with ES6 classes."
     ],
     "siteLink": "http://jessypeck.github.io/piano/index.html",
@@ -33,10 +33,10 @@
     "name": "Minuteur",
     "image": "./images/minuteur.png",
     "content": [
-      "A pomodoro timer for helping me remember to take breaks. ",
-      "The timer can be paused, reset, and stopped. ",
-      "The user can customize the lengths for focus and break periods. ",
-      "One of my earlier projects from when I was first learning Javascript. "
+      "A pomodoro timer for helping me remember to take breaks.",
+      "The timer can be paused, reset, and stopped.",
+      "The user can customize the lengths for focus and break periods.",
+      "One of my earlier projects from when I was first learning Javascript."
     ],
     "siteLink": "http://jessypeck.github.io/minuteur/index.html",
     "codeLink": "https://github.com/jessypeck/jessypeck.github.io",
