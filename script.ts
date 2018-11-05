@@ -32,13 +32,13 @@ const createCardContent = (project: Project) => {
       <div class="card-title-row">
           <div class='card-title'>${project.name}</div>
           <div class="card-button-wrapper">
-              <a href='${project.siteLink}' class='visit'><span class="buttonText">Visit Site</span> <i class="fas fa-external-link-alt"></i></a>
-              <a href='${project.codeLink}' class='code'><span class="buttonText">View Code </span><i class="far fa-code"></i></a>
+              <a href='${project.siteLink}' class='visit'>Visit Site <i class="fas fa-external-link-alt"></i></a>
+              <a href='${project.codeLink}' class='code'>View Code <i class="far fa-code"></i></a>
           </div>
       </div>
       ${project.content.join(' ')}
       <div class='chip-wrapper'>
-        ${project.skills.map((skill) => `<span class='card-chip'>${skill}</span>`)}
+        ${project.skills.map((skill) => `<span class='card-chip'>${skill}</span>`).join(' ')}
       </div>
     </div>
   </div>

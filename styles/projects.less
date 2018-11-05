@@ -57,36 +57,17 @@
 
 .card-button-wrapper > a {
   text-decoration: none;
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 600;
   padding: @size-s;
   margin-left: @size-s;
   border-radius: 5px;
-}
-
-.visit {
-  border: 1px #00b0e4 solid;
-  letter-spacing: .02rem;
   color: #00b0e4;
 }
 
-.visit:hover{
-  border: 1px @color-grey solid;
+.card-button-wrapper > a:hover{
   color: @color-grey;
 }
-
-.code {
-  border: 1px #00b0e4 solid;
-  background-color: #00b0e4;
-  color: @color-white;
-}
-
-.code:hover{
-  border: 1px @color-grey solid;
-  background-color: @color-grey;
-}
-
-
 
 .chip-wrapper{
   display: flex;
@@ -109,7 +90,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1020px) {
   .card-content{
     width: 100%;
     padding: @size-xxl;
@@ -127,22 +108,16 @@
     margin-bottom: @size-m;
   }
 
-  .buttonText{
-    display: none;
-  }
-
   .card-button-wrapper > a {
-    text-decoration: none;
-    font-size: .8rem;
     font-weight: 600;
-    padding: @size-s;
-    border-radius: 5px;
+    padding: @size-xs;
   }
 
   // Removes margin from first button
   .card-button-wrapper > a:nth-child(1){
     margin-left: 0px;
   }
+
 
   .card-title-row{
     display: flex;
