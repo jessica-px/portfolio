@@ -1,3 +1,5 @@
+import './styles/styles.less';
+
 interface Project{
   name: string,
   image: string
