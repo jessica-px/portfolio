@@ -5,7 +5,7 @@
   "author": "Jessica Peck",
   "license": "MIT",
   "devDependencies": {
-    "@fortawesome/fontawesome-pro": "^5.5.0",
+    "@fortawesome/fontawesome-free": "^5.5.0",
     "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
     "less": "^3.8.1",
