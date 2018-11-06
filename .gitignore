@@ -5,3 +5,4 @@ dist/*
 !dist/projects.json*
 !dist/images
 !dist/font-mfizz-2.4.1
+yarn.lock
