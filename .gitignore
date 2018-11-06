@@ -2,4 +2,6 @@ script.js
 styles.css
 node_modules
 dist/*
-!dist/index.html*
+!dist/projects.json*
+!dist/images
+!dist/font-mfizz-2.4.1
