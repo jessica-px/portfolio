@@ -34,8 +34,8 @@ const createCardContent = (project: Project) => {
       <div class="card-title-row">
           <div class='card-title'>${project.name}</div>
           <div class="card-button-wrapper">
-              <a href='${project.siteLink}' class='visit'>Visit Site <i class="fas fa-external-link-alt"></i></a>
-              <a href='${project.codeLink}' class='code'>View Code <i class="fas fa-code"></i></a>
+              <a href='${project.siteLink}' target='_blank' class='visit'>Visit Site <i class="fas fa-external-link-alt"></i></a>
+              <a href='${project.codeLink}' target='_blank' class='code'>View Code <i class="fas fa-code"></i></a>
           </div>
       </div>
       ${project.content.join(' ')}
