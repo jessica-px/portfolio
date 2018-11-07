@@ -1,8 +1,14 @@
 const path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const devMode = process.env.NODE_ENV !== 'production'; 
 
 module.exports = {
+  mode: "production", 
   entry: [
     './src/script.ts'
+  ],
+  plugins: [
+    new ExtractTextPlugin("styles.css")
   ],
   module: {
     rules: [
@@ -14,14 +20,13 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        use: [{
-          loader: 'style-loader' // creates style nodes from JS strings
-        }, {
-          loader: 'css-loader' // translates CSS into CommonJS
-        }, {
-          loader: 'less-loader' // compiles Less to CSS
-        }]
-      }
+        use: ExtractTextPlugin.extract({
+            use: [ 
+                'css-loader',
+                'less-loader'
+            ]
+        })
+    }
     ]
   },
   resolve: {
