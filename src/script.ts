@@ -1,5 +1,3 @@
-import './styles/styles.less';
-
 interface Project{
   name: string,
   image: string
@@ -10,7 +8,7 @@ interface Project{
 }
 
 const getProjectData = () => {
-  fetch('./projects.json').then(response => {
+  fetch('./dist/projects.json').then(response => {
     return response.json();
   }).then(data => {
       buildProjectCards(data.projectsArray);
