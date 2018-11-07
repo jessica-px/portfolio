@@ -1,7 +1,7 @@
 { "projectsArray" : [
   {
     "name": "Portfolio Site",
-    "image": "./images/portfolio.png",
+    "image": "./dist/images/portfolio.png",
     "content": [
       "The website you're on right now!",
       "A simple little site for displaying some of my side projects.",
@@ -16,7 +16,7 @@
   },
   {
     "name": "Piano Says",
-    "image": "./images/piano.png",
+    "image": "./dist/images/piano.png",
     "content": [
       "A Simon-like memory game in the style of a piano.",
       "Players can choose which key they want the randomized \"song\" to play in.",
@@ -31,7 +31,7 @@
   },
   {
     "name": "Minuteur",
-    "image": "./images/minuteur.png",
+    "image": "./dist/images/minuteur.png",
     "content": [
       "A pomodoro timer for helping me remember to take breaks.",
       "The timer can be paused, reset, and stopped.",
