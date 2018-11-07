@@ -8,8 +8,8 @@
       "The HTML for these project cards is generated with JavaScript for easier maintenance.",
       "The data itself is fetched from a JSON file."
     ],
-    "siteLink": "http://jessypeck.github.io/piano/index.html",
-    "codeLink": "https://github.com/jessypeck/jessypeck.github.io",
+    "siteLink": "https://jessypeck.netlify.com/",
+    "codeLink": "https://github.com/jessypeck/portfolio",
     "skills": [
       "HTML 5", "CSS 3", "Flexbox", "CSS Grid", "Less", "JavaScript", "ES6", "TypeScript"
     ]
