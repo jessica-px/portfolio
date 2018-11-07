@@ -35,8 +35,10 @@ p a{
   color: @color-black;
 }
 
-p a:hover{
-  color: @color-black-dark;
+@media (hover: hover) {
+  p a:hover{
+    color: @color-black-dark;
+  }
 }
 
 .divider{

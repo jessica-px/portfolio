@@ -14,8 +14,11 @@
   text-decoration: none;
 }
 
-.navbar a:hover{
-  color: @color-black-dark;
+
+@media (hover: hover) {
+  .navbar a:hover{
+    color: @color-black-dark;
+  }
 }
 
 .nav-icon{
@@ -34,8 +37,12 @@
   .navbar a{
     color: @color-grey-light;
   }
-  .navbar a:hover{
-    border-bottom: 1px solid @color-black-dark;
+}
+
+@media (hover: hover) {
+  @media only screen and (max-width: 600px){
+    .navbar a:hover{
+      border-bottom: 1px solid @color-black-dark;
+    }
   }
-  
 }
