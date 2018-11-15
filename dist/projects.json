@@ -4,9 +4,8 @@
     "image": "./dist/images/random-3.png",
     "content": [
       "A robust fullstack webapp that generates items and ideas for tabletop roleplaying games like Dungeons and Dragons.",
-      "A simple little site for displaying some of my side projects.",
-      "The HTML for these project cards is generated with JavaScript for easier maintenance.",
-      "The data itself is fetched from a JSON file."
+      "Users can make accounts that let them 'like' generator results and review their favorites.",
+      "This project was my first real experiment with backend programming."
     ],
     "siteLink": "https://random-sundry.herokuapp.com/",
     "codeLink": "https://github.com/jessypeck/random-sundry",
