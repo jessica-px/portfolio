@@ -1,5 +1,21 @@
 { "projectsArray" : [
   {
+    "name": "Random Sundry",
+    "image": "./dist/images/random-3.png",
+    "content": [
+      "A robust fullstack webapp that generates items and ideas for tabletop roleplaying games like Dungeons and Dragons.",
+      "A simple little site for displaying some of my side projects.",
+      "The HTML for these project cards is generated with JavaScript for easier maintenance.",
+      "The data itself is fetched from a JSON file."
+    ],
+    "siteLink": "https://random-sundry.herokuapp.com/",
+    "codeLink": "https://github.com/jessypeck/random-sundry",
+    "skills": [
+      "HTML 5", "CSS 3", "Flexbox", "SCSS", "JavaScript", "ES6", "React", "React-Router", "Redux", 
+      "NodeJS", "Express", "MongoDB", "Babel", "webpack"
+    ]
+  },
+  {
     "name": "Portfolio Site",
     "image": "./dist/images/portfolio.png",
     "content": [
