@@ -1,5 +1,5 @@
 
-# Portfolio SIte
+# Portfolio Site
 [Live Site](https://jessypeck.netlify.com/)
 
 A portfolio website for showcasing some of my previous projects.
